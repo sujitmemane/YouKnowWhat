@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Confessions from "./pages/Confessions";
 import CrushReveal from "./pages/CrushReveal";
 import DarkSecret from "./pages/DarkSecret";
-import { Fetishes } from "./pages/Fetishes";
+import Fetishes from "./pages/Fetishes";
 import IdealPartner from "./pages/IdealPartner";
 import Proposals from "./pages/Proposals";
 

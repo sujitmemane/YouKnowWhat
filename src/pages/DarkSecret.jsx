@@ -30,7 +30,7 @@ const DarkSecret = () => {
             onChange={(e) => setMessage(e.target.value)}
             className="w-full  text-black rounded outline-none bg-[#ff8fab]/80 placeholder:text-black  p-4 my-8 resize-none "
             placeholder="Type Something Here ..."
-            rows={10}
+            rows={15}
           ></textarea>
           <button className="px-4 w-full py-4 bg-[#ff8fab] rounded text-white text-xl md:text-3xl hover:bg-[#ff8fab]/80 ">
             Submit

@@ -20,18 +20,19 @@ const Confessions = () => {
   return (
     <div>
       <div className="flex flex-col items-center justify-between">
-        <h1 className="text-4xl md:text-6xl">Confessions</h1>
+        <h1 className="text-6xl heading text-[#ff8fab]  ">Confessions</h1>
         <form onSubmit={submitFormHandler} className="w-full">
+          <p className="text-8xl"> 🙈</p>
           <textarea
             name=""
             id=""
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            className="w-full border-[3px] border-black outline-none  p-4 my-8 resize-none "
-            placeholder="Write Something Here ..."
+            className="w-full  text-black rounded outline-none bg-[#ff8fab]/80 placeholder:text-black  p-4 my-8 resize-none "
+            placeholder="Type Something Here ..."
             rows={10}
           ></textarea>
-          <button className="px-4 w-full py-4 bg-black text-white text-xl md:text-3xl hover:bg-[#212529] ">
+          <button className="px-4 w-full py-4 bg-[#ff8fab] rounded text-white text-xl md:text-3xl hover:bg-[#ff8fab]/80 ">
             Submit
           </button>
         </form>

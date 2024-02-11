@@ -8,7 +8,7 @@ const Home = () => {
     <div className="flex  justify-center w-full  h-full  items-center">
       <div className="flex flex-col items-center justify-cennter  space-y-12">
         <h1 className="text-8xl heading text-[#ff8fab]  ">ykw.</h1>
-        <p className="text-2xl md:text-4xl capitalize font-semibold  max-w-3xl ">
+        <p className="text-3xl capitalize font-bold   ">
           Reveal Things Anonymously
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-6 mt-16 ">
@@ -22,7 +22,7 @@ const Home = () => {
             </Link>
           ))}
         </div>
-        <p className="text-2xl  capitalize font-semibold  max-w-3xl flex  items-center space-x-3 ">
+        <p className="text-2xl  capitalize font-bold  max-w-3xl flex  items-center space-x-3 ">
           <p>Made With </p> <FaHeart className="text-[#ff8fab]" />
         </p>
       </div>

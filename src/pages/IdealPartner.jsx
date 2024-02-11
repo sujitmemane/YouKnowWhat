@@ -10,7 +10,7 @@ const IdealPartner = () => {
     e.preventDefault();
     try {
       const docRef = await addDoc(collection(db, "data"), {
-        category: "confession",
+        category: "idealpartner",
         message,
       });
       console.log("Document written with ID: ", docRef.id);

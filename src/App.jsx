@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import Confessions from "./pages/Confessions";
 import CrushReveal from "./pages/CrushReveal";
@@ -22,6 +24,7 @@ function App() {
           <Route path="/ideal-partner" element={<IdealPartner />} />
           <Route path="/proposals" element={<Proposals />} />
         </Routes>
+        <ToastContainer />
       </BrowserRouter>
     </>
   );

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
-import { db } from "../firebase.js";
+import db from "../firebase";
+import { toast } from "react-toastify";
 
 const Fetishes = () => {
   const [message, setMessage] = useState("");
@@ -8,13 +9,16 @@ const Fetishes = () => {
     e.preventDefault();
     try {
       const docRef = await addDoc(collection(db, "data"), {
-        category: "confession",
+        category: "fetishes",
         message,
       });
       console.log("Document written with ID: ", docRef.id);
-      setMessage(" ");
+
+      toast.success("Fetishes Submitted Successfully!");
+      setMessage("");
     } catch (e) {
       console.error("Error adding document: ", e);
+      toast.error("Error Submitting Fetishes");
     }
   };
   return (

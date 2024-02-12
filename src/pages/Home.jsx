@@ -2,12 +2,14 @@ import React from "react";
 import { categoriesData } from "../content";
 import { Link } from "react-router-dom";
 import { FaHeart } from "react-icons/fa";
+import Logo from "../assets/logo.jpeg";
 
 const Home = () => {
   return (
     <div className="flex  justify-center w-full  h-full  items-center">
-      <div className="flex flex-col items-center justify-cennter  space-y-12">
-        <h1 className="text-8xl heading text-[#ff8fab]  ">ykw.</h1>
+      <div className="flex flex-col items-center justify-cennter  space-y-4">
+        {/* <h1 className="text-8xl heading text-[#ff8fab]  ">ykw.</h1> */}
+        <img src={Logo} alt="" className="rounded-full w-40 h-40" />
         <p className="text-3xl capitalize font-bold   ">
           Reveal Things Anonymously
         </p>

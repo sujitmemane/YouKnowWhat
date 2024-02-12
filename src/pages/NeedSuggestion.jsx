@@ -3,30 +3,30 @@ import { collection, addDoc } from "firebase/firestore";
 import db from "../firebase";
 import { toast } from "react-toastify";
 
-const Proposals = () => {
+const NeedSuggestion = () => {
   const [message, setMessage] = useState("");
   const submitFormHandler = async (e) => {
     e.preventDefault();
     try {
       const docRef = await addDoc(collection(db, "data"), {
-        category: "Proposal",
+        category: "Need Suggestion",
         message,
       });
       console.log("Document written with ID: ", docRef.id);
-      setMessage(" ");
-      toast.success("Proposal Submitted Successfully!");
+
+      toast.success("Fetishes Submitted Successfully!");
       setMessage("");
     } catch (e) {
       console.error("Error adding document: ", e);
-      toast.error("Error Submitting Proposal");
+      toast.error("Error Submitting Fetishes");
     }
   };
   return (
     <div>
       <div className="flex flex-col items-center justify-between">
-        <h1 className="text-6xl heading text-[#ff8fab]  ">Proposal</h1>
+        <h1 className="text-6xl heading text-[#ff8fab]  ">Need Suggestion</h1>
         <form onSubmit={submitFormHandler} className="w-full">
-          <p className="text-8xl"> 💌</p>
+          <p className="text-8xl mt-8"> 💡</p>
           <textarea
             name=""
             id=""
@@ -45,4 +45,4 @@ const Proposals = () => {
   );
 };
 
-export default Proposals;
+export default NeedSuggestion;

@@ -11,7 +11,7 @@ const Home = () => {
         <p className="text-3xl capitalize font-bold   ">
           Reveal Things Anonymously
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-6 mt-16 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-6 mt-16 ">
           {categoriesData.map((category) => (
             <Link key={category.id} to={`${category.path}`}>
               <div className="px-16 py-12 bg-[#ff8fab] rounded text-white">

@@ -10,7 +10,7 @@ const CrushReveal = () => {
     e.preventDefault();
     try {
       const docRef = await addDoc(collection(db, "data"), {
-        category: "crushreveal",
+        category: "Crush Reveal",
         message,
       });
       console.log("Document written with ID: ", docRef.id);

@@ -9,7 +9,7 @@ const Fetishes = () => {
     e.preventDefault();
     try {
       const docRef = await addDoc(collection(db, "data"), {
-        category: "fetishes",
+        category: "Fetishes",
         message,
       });
       console.log("Document written with ID: ", docRef.id);

@@ -9,7 +9,7 @@ const DarkSecret = () => {
     e.preventDefault();
     try {
       const docRef = await addDoc(collection(db, "data"), {
-        category: "darksecret",
+        category: "Dark Secret",
         message,
       });
       console.log("Document written with ID: ", docRef.id);

@@ -31,4 +31,9 @@ export const categoriesData = [
     title: "Crush Reveal",
     path: "/crush-reveal",
   },
+  {
+    id: 7,
+    title: "Need Suggestion",
+    path: "/need-suggestion",
+  },
 ];

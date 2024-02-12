@@ -10,6 +10,7 @@ import DarkSecret from "./pages/DarkSecret";
 import Fetishes from "./pages/Fetishes";
 import IdealPartner from "./pages/IdealPartner";
 import Proposals from "./pages/Proposals";
+import NeedSuggestion from "./pages/NeedSuggestion";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/fetishes" element={<Fetishes />} />
           <Route path="/ideal-partner" element={<IdealPartner />} />
           <Route path="/proposals" element={<Proposals />} />
+          <Route path="/need-suggestion" element={<NeedSuggestion />} />
         </Routes>
         <ToastContainer />
       </BrowserRouter>
